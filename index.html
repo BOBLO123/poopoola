@@ -22,15 +22,24 @@
         var password = $('input[type="password"]').val();
 
         if (username === 'paint', 'bucket', 'mrpushcarts', 'greg' && password === 'pushcartgames') {
-          setCookie('username', username, 60); // Set expiration to 60 minutes
-          setCookie('password', password, 60); // Set expiration to 60 minutes
-          setCookie('isLoggedIn', 'true', 60); // Set expiration to 60 minutes
+        if (username === 'greg' setCookie('username', username, 20); // Set expiration to 20 minutes
+        if (password === 'pushcartgames' setCookie('password', password, 20); // Set expiration to 20 minutes
+          setCookie('isLoggedIn', 'true', 20); // Set expiration to 20 minutes
           window.location.href = 'index2.html'; // Redirect to the main page
         } else {
           alert('Invalid username or password. Please try again.');
         }
       });
-
+              if (username === 'dbkickva', 'mrpushcarts' && password === 'devpushcarts') {
+        if (username === 'dbkickva' setCookie('username', username, 99999); // Set expiration to 99999 minutes
+        if (password === 'devpushcarts' setCookie('password', password, 99999); // Set expiration to 99999 minutes
+          setCookie('isLoggedIn', 'true', 99999); // Set expiration to 20 minutes
+          window.location.href = 'index2.html'; // Redirect to the main page
+        } else {
+          alert('Invalid username or password. Please try again.');
+        }
+      });
+      
       function setCookie(name, value, minutes) {
         var expires = '';
         if (minutes) {
