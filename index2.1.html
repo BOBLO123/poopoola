@@ -11,10 +11,6 @@
       var usernameCookie = getCookie('username');
       var passwordCookie = getCookie('password');
 
-      if (usernameCookie === 'paint', 'bucket', 'mrpushcarts', 'greg' && passwordCookie === 'pushcartgames') {
-        setCookie('isLoggedIn', 'true', 60); // Set expiration to 60 minutes
-        window.location.href = 'index2.html'; // Redirect to the main page
-      }
 
       $('.login-form').on('submit', function(e) {
         e.preventDefault();
